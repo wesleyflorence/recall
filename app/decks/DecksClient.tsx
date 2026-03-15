@@ -77,6 +77,8 @@ export default function DecksClient({ initialDecks }: DecksClientProps) {
   const [actionDeckId, setActionDeckId] = useState<number | null>(null);
   const [generatingCountByDeck, setGeneratingCountByDeck] = useState<Record<number, number>>({});
   const [importing, setImporting] = useState(false);
+  const [deletingDeckId, setDeletingDeckId] = useState<number | null>(null);
+  const [deletingCardId, setDeletingCardId] = useState<number | null>(null);
 
   const refreshDecks = async () => {
     const response = await fetch(`${BASE}/api/decks`, { cache: 'no-store' });
@@ -210,6 +212,52 @@ export default function DecksClient({ initialDecks }: DecksClientProps) {
     }));
   };
 
+  const handleDeleteDeck = async (deckId: number) => {
+    if (!window.confirm('Delete this deck and all its cards? This cannot be undone.')) {
+      return;
+    }
+
+    setDeletingDeckId(deckId);
+    setError('');
+
+    try {
+      const response = await fetch(`${BASE}/api/decks/${deckId}`, { method: 'DELETE' });
+      if (!response.ok) {
+        const payload = (await response.json()) as { error?: string };
+        setError(payload.error ?? 'Failed to delete deck');
+        return;
+      }
+      await refreshDecks();
+    } catch (deleteError) {
+      setError(deleteError instanceof Error ? deleteError.message : 'Failed to delete deck');
+    } finally {
+      setDeletingDeckId(null);
+    }
+  };
+
+  const handleDeleteCard = async (cardId: number) => {
+    if (!window.confirm('Delete this card? This cannot be undone.')) {
+      return;
+    }
+
+    setDeletingCardId(cardId);
+    setError('');
+
+    try {
+      const response = await fetch(`${BASE}/api/cards/${cardId}`, { method: 'DELETE' });
+      if (!response.ok) {
+        const payload = (await response.json()) as { error?: string };
+        setError(payload.error ?? 'Failed to delete card');
+        return;
+      }
+      await refreshDecks();
+    } catch (deleteError) {
+      setError(deleteError instanceof Error ? deleteError.message : 'Failed to delete card');
+    } finally {
+      setDeletingCardId(null);
+    }
+  };
+
   return (
     <>
       <section className="card">
@@ -311,6 +359,14 @@ export default function DecksClient({ initialDecks }: DecksClientProps) {
                   <a href={`${BASE}/api/decks/${deck.id}/export`} className="btn btn-secondary" download>
                     Export
                   </a>
+                  <button
+                    className="btn btn-destructive"
+                    type="button"
+                    disabled={deletingDeckId === deck.id}
+                    onClick={() => void handleDeleteDeck(deck.id)}
+                  >
+                    {deletingDeckId === deck.id ? 'Deleting…' : 'Delete deck'}
+                  </button>
                 </div>
               </div>
 
@@ -323,19 +379,33 @@ export default function DecksClient({ initialDecks }: DecksClientProps) {
                 </details>
               ) : null}
 
-              <h4>Cards ({deck.cards.length})</h4>
-              {deck.cards.length === 0 ? (
-                <p className="muted" style={{ padding: '0 16px 12px' }}>No cards yet — generate some above.</p>
-              ) : (
-                <ul className="card-list">
-                  {deck.cards.map((card) => (
-                    <li className="card-list-item" key={card.id}>
-                      <p className="strong">{card.question}</p>
-                      <p className="muted">Rubric: {card.rubric}</p>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <details>
+                <summary>Cards ({deck.cards.length})</summary>
+                {deck.cards.length === 0 ? (
+                  <p className="muted" style={{ padding: '8px 16px 12px' }}>No cards yet — generate some above.</p>
+                ) : (
+                  <ul className="card-list">
+                    {deck.cards.map((card) => (
+                      <li className="card-list-item" key={card.id}>
+                        <div className="card-list-item-content">
+                          <div>
+                            <p className="strong">{card.question}</p>
+                            <p className="muted">Rubric: {card.rubric}</p>
+                          </div>
+                          <button
+                            className="btn btn-destructive btn-sm"
+                            type="button"
+                            disabled={deletingCardId === card.id}
+                            onClick={() => void handleDeleteCard(card.id)}
+                          >
+                            {deletingCardId === card.id ? '…' : 'Delete'}
+                          </button>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </details>
             </article>
           ))
         )}
