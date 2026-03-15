@@ -1,0 +1,132 @@
+{
+  "name": "Centuries of History (AD)",
+  "description": "A century-by-century overview of major historical themes and events from the 1st century AD to the 21st century. Focus on the defining character of each century rather than exhaustive detail.",
+  "cards": [
+    {
+      "question": "What defined the 1st century AD (1–100)?",
+      "rubric": "Should mention the Roman Empire at its height and the origins of Christianity. Bonus for mentioning key figures like Augustus, Nero, or Jesus of Nazareth.",
+      "referenceAnswer": "The 1st Century: Rome & the Rise of Christianity. The Roman Empire dominated the Mediterranean world, reaching peak stability under the Pax Romana begun by Augustus. Christianity emerged in Roman Judea with the life of Jesus and spread through the apostles, particularly Paul. The destruction of the Second Temple in Jerusalem (70 AD) reshaped Judaism. Rome itself saw dramatic rulers from Augustus to Nero, and the Colosseum was begun under Vespasian.",
+      "difficultyHint": "Think: what was the dominant empire, and what major religion got its start?"
+    },
+    {
+      "question": "What defined the 2nd century AD (100–200)?",
+      "rubric": "Should mention the peak of the Roman Empire (Five Good Emperors / Pax Romana) and general stability. Bonus for Trajan, Hadrian, or Marcus Aurelius.",
+      "referenceAnswer": "The 2nd Century: Peak Rome — The Five Good Emperors. This was the golden age of the Roman Empire. Under Trajan, the empire reached its maximum territorial extent. Hadrian consolidated borders (Hadrian's Wall). Marcus Aurelius, the philosopher-emperor, represented Roman ideals but also faced plagues and frontier pressures. The Silk Road connected Rome to Han Dynasty China. Christianity continued to spread despite periodic persecution.",
+      "difficultyHint": "Think: Roman Empire at its absolute peak — who were the famous emperors?"
+    },
+    {
+      "question": "What defined the 3rd century AD (200–300)?",
+      "rubric": "Should mention the Crisis of the Third Century — political instability, military anarchy, and near-collapse of Rome. Bonus for mentioning Diocletian's reforms or the rise of the Sassanid Empire.",
+      "referenceAnswer": "The 3rd Century: Crisis & Fragmentation. The Roman Empire nearly collapsed during the Crisis of the Third Century (235–284) — civil wars, plague, economic collapse, and barbarian invasions. The empire briefly split into three competing states. Diocletian stabilized things with major reforms including the Tetrarchy (rule by four). Meanwhile, the Sassanid Empire rose in Persia as a major rival to Rome. Christianity continued growing despite the Decian persecutions.",
+      "difficultyHint": "Think: Rome almost fell apart — what was this famous crisis called?"
+    },
+    {
+      "question": "What defined the 4th century AD (300–400)?",
+      "rubric": "Should mention Constantine, the legalization/adoption of Christianity, and the split of the Roman Empire into East and West. Bonus for the Council of Nicaea or Theodosius.",
+      "referenceAnswer": "The 4th Century: Christianity Triumphs & Rome Splits. Constantine legalized Christianity (Edict of Milan, 313) and founded Constantinople as a new eastern capital. The Council of Nicaea (325) established core Christian doctrine. By century's end, Theodosius I made Christianity the official state religion and permanently divided the empire into Eastern and Western halves. The Huns began migrating westward, putting pressure on Germanic tribes along Rome's borders.",
+      "difficultyHint": "Think: which emperor converted to Christianity, and what happened to the Roman Empire's structure?"
+    },
+    {
+      "question": "What defined the 5th century AD (400–500)?",
+      "rubric": "Should mention the fall of the Western Roman Empire (476 AD). Bonus for mentioning barbarian kingdoms, Attila the Hun, or the sack of Rome.",
+      "referenceAnswer": "The 5th Century: Fall of Rome & the Barbarian Kingdoms. The Western Roman Empire collapsed under waves of Germanic migration and invasion. Rome was sacked by the Visigoths (410) and Vandals (455). Attila the Hun ravaged Europe before his death in 453. The last Western Emperor was deposed in 476, traditionally marking the end of antiquity. Germanic kingdoms (Franks, Visigoths, Ostrogoths) replaced Roman authority in Western Europe. The Eastern Roman (Byzantine) Empire continued thriving from Constantinople.",
+      "difficultyHint": "Think: the big date everyone remembers — when did Rome 'fall'?"
+    },
+    {
+      "question": "What defined the 6th century AD (500–600)?",
+      "rubric": "Should mention Justinian's attempt to restore the Roman Empire and/or the rise of monasticism in Europe. Bonus for the Plague of Justinian, Benedict of Nursia, or early Byzantine culture.",
+      "referenceAnswer": "The 6th Century: Justinian's Ambition & Early Medieval Europe. Emperor Justinian I attempted to reconquer the Western Roman Empire, temporarily retaking North Africa, Italy, and parts of Spain. He codified Roman law (Corpus Juris Civilis) and built the Hagia Sophia. But the devastating Plague of Justinian (541) killed millions and weakened the empire. In Western Europe, monasticism spread (St. Benedict's Rule), preserving learning. The Franks under Clovis established a powerful kingdom in Gaul.",
+      "difficultyHint": "Think: which Byzantine emperor tried to put Rome back together?"
+    },
+    {
+      "question": "What defined the 7th century AD (600–700)?",
+      "rubric": "Should mention the rise of Islam and the early Islamic conquests. Bonus for Muhammad, the Rashidun Caliphate, or the impact on the Byzantine and Sassanid empires.",
+      "referenceAnswer": "The 7th Century: The Rise of Islam. Muhammad founded Islam in Arabia, and after his death (632), the Rashidun Caliphate launched one of history's most rapid expansions — conquering the entire Sassanid (Persian) Empire and taking Syria, Egypt, and North Africa from the Byzantines within decades. The Islamic golden age began taking root. In Europe, the Anglo-Saxon kingdoms consolidated in England, and the Visigoths ruled Spain. Tang Dynasty China entered a golden age in the East.",
+      "difficultyHint": "Think: which major world religion emerged and spread explosively this century?"
+    },
+    {
+      "question": "What defined the 8th century AD (700–800)?",
+      "rubric": "Should mention the Umayyad/Abbasid Caliphates and/or Charlemagne and the Carolingian Renaissance. Bonus for the Battle of Tours, the Abbasid Revolution, or the Viking Age beginning.",
+      "referenceAnswer": "The 8th Century: Islamic Golden Age Begins & Charlemagne Rises. The Umayyad Caliphate stretched from Spain to Central Asia — the largest empire the world had yet seen. The Abbasid Revolution (750) shifted the Islamic capital to Baghdad, inaugurating a golden age of science and learning. In Europe, Charles Martel halted the Muslim advance at Tours (732), and his grandson Charlemagne began unifying much of Western Europe. The first Viking raids struck at century's end (Lindisfarne, 793).",
+      "difficultyHint": "Think: who was building an empire in Europe, and which caliphate was at its peak?"
+    },
+    {
+      "question": "What defined the 9th century AD (800–900)?",
+      "rubric": "Should mention the Carolingian Empire (Charlemagne crowned Emperor in 800) and the Viking Age. Bonus for the fragmentation of the Carolingian Empire or the Abbasid golden age.",
+      "referenceAnswer": "The 9th Century: Charlemagne's Empire & the Viking Age. Charlemagne was crowned Holy Roman Emperor on Christmas Day 800, reviving the idea of a unified Christian Europe. But his empire fragmented among his grandsons (Treaty of Verdun, 843), laying the foundations for France and Germany. Vikings from Scandinavia raided, traded, and settled across Europe — reaching as far as Constantinople, Iceland, and North America. The Abbasid Caliphate in Baghdad remained a center of learning and science.",
+      "difficultyHint": "Think: a famous emperor crowned on Christmas, and raiders from the north."
+    },
+    {
+      "question": "What defined the 10th century AD (900–1000)?",
+      "rubric": "Should mention the formation of medieval European kingdoms and/or the Byzantine resurgence. Bonus for Otto I and the Holy Roman Empire, the founding of Kievan Rus, or Song Dynasty China.",
+      "referenceAnswer": "The 10th Century: Medieval Europe Takes Shape. Otto I was crowned Holy Roman Emperor (962), establishing the political framework of medieval Central Europe. The Vikings settled into Normandy, converted to Christianity, and founded states (Kievan Rus). England unified under Anglo-Saxon kings. The Byzantine Empire enjoyed a military and cultural resurgence under the Macedonian dynasty. In the East, Song Dynasty China began, bringing innovations like gunpowder and movable type. The Fatimid Caliphate rose in North Africa and Egypt.",
+      "difficultyHint": "Think: medieval kingdoms are forming — who became Holy Roman Emperor?"
+    },
+    {
+      "question": "What defined the 11th century AD (1000–1100)?",
+      "rubric": "Should mention the First Crusade (1096) and/or the Norman Conquest of England (1066). Bonus for the Great Schism (1054) or Seljuk Turks.",
+      "referenceAnswer": "The 11th Century: Crusades Begin & the Norman Conquest. The Great Schism of 1054 permanently split Christianity into Catholic and Orthodox. The Seljuk Turks defeated the Byzantines at Manzikert (1071), triggering a call for help that led to the First Crusade (1096–1099), which captured Jerusalem. William the Conqueror invaded England in 1066 (Battle of Hastings), transforming English culture, language, and governance. Song Dynasty China flourished with advanced technology and commerce.",
+      "difficultyHint": "Think: two famous dates — one for England, one for Jerusalem."
+    },
+    {
+      "question": "What defined the 12th century AD (1100–1200)?",
+      "rubric": "Should mention the continued Crusades and/or the growth of medieval culture (universities, cathedrals, feudalism at its height). Bonus for Saladin, Henry II, or the Angevin Empire.",
+      "referenceAnswer": "The 12th Century: High Middle Ages & Crusader States. The Crusader States in the Holy Land were established but constantly contested. Saladin recaptured Jerusalem (1187), prompting the Third Crusade. In Europe, this was the age of cathedral building (Gothic architecture), the founding of universities (Bologna, Paris, Oxford), and the height of feudal society. The Angevin Empire under Henry II stretched from England to southern France. The Mongol tribes were unifying on the Asian steppe under Temüjin.",
+      "difficultyHint": "Think: cathedrals, universities, and a famous Muslim general who retook Jerusalem."
+    },
+    {
+      "question": "What defined the 13th century AD (1200–1300)?",
+      "rubric": "Should mention the Mongol Empire (Genghis Khan / largest land empire). Bonus for the Magna Carta (1215), the fall of Baghdad (1258), or Marco Polo.",
+      "referenceAnswer": "The 13th Century: The Mongol Century. Genghis Khan and his successors built the largest contiguous land empire in history, conquering from China to Eastern Europe. The Mongols sacked Baghdad (1258), ending the Abbasid Caliphate. In Europe, the Magna Carta (1215) limited royal power in England. The Fourth Crusade infamously sacked Constantinople (1204). Thomas Aquinas shaped Christian philosophy, and Marco Polo traveled to China. Gothic cathedrals rose across Europe.",
+      "difficultyHint": "Think: who built the largest land empire in history?"
+    },
+    {
+      "question": "What defined the 14th century AD (1300–1400)?",
+      "rubric": "Should mention the Black Death / bubonic plague (killed ~1/3 of Europe). Bonus for the Hundred Years' War, the decline of feudalism, or the early Renaissance.",
+      "referenceAnswer": "The 14th Century: Plague & Upheaval. The Black Death (1347–1351) killed roughly a third of Europe's population, devastating society and economy but ultimately empowering surviving peasants and hastening feudalism's decline. The Hundred Years' War between England and France began (1337). The Western Schism split the Catholic Church between rival popes. The Mongol Empire fragmented. In Italy, early Renaissance humanism emerged with figures like Petrarch. The Ottoman Empire expanded in Anatolia and the Balkans.",
+      "difficultyHint": "Think: a devastating pandemic that reshaped European society."
+    },
+    {
+      "question": "What defined the 15th century AD (1400–1500)?",
+      "rubric": "Should mention the Renaissance in full bloom and the Age of Exploration beginning (Columbus 1492). Bonus for the fall of Constantinople (1453), the printing press, or the end of the Hundred Years' War.",
+      "referenceAnswer": "The 15th Century: Renaissance & Discovery. The Renaissance flourished in Italy — da Vinci, Botticelli, and a revival of classical learning. Gutenberg's printing press (~1440) revolutionized information spread. Constantinople fell to the Ottoman Turks (1453), ending the Byzantine Empire and pushing Europeans to seek new trade routes. Columbus reached the Americas (1492). The Hundred Years' War ended (1453). Spain was unified under Ferdinand and Isabella. The age of European exploration and colonization began.",
+      "difficultyHint": "Think: printing, paintings, and a famous voyage in 1492."
+    },
+    {
+      "question": "What defined the 16th century AD (1500–1600)?",
+      "rubric": "Should mention the Protestant Reformation and/or the Age of Exploration/colonization of the Americas. Bonus for Martin Luther, the Ottoman Empire at its peak, or the Scientific Revolution's beginnings.",
+      "referenceAnswer": "The 16th Century: Reformation & Global Empires. Martin Luther's 95 Theses (1517) launched the Protestant Reformation, splitting Western Christianity and sparking religious wars. Spain and Portugal built vast colonial empires in the Americas, exploiting indigenous peoples and importing enslaved Africans. The Ottoman Empire peaked under Suleiman the Magnificent. Henry VIII broke England from Rome. The Renaissance reached its height (Michelangelo, Shakespeare began writing). Copernicus proposed heliocentrism, seeding the Scientific Revolution.",
+      "difficultyHint": "Think: a monk with a hammer, and European empires spanning the globe."
+    },
+    {
+      "question": "What defined the 17th century AD (1600–1700)?",
+      "rubric": "Should mention the Scientific Revolution and/or the age of absolutism and religious/civil wars. Bonus for Newton, Galileo, the Thirty Years' War, or the English Civil War.",
+      "referenceAnswer": "The 17th Century: Science & Absolutism. The Scientific Revolution transformed understanding of the natural world — Galileo, Kepler, and Newton laid foundations for modern physics and astronomy. Politically, it was the age of absolutism: Louis XIV epitomized the all-powerful monarch in France. The Thirty Years' War (1618–1648) devastated Central Europe and led to the Peace of Westphalia, establishing modern state sovereignty. The English Civil War led to the temporary abolition of monarchy. Colonial empires expanded, and the transatlantic slave trade intensified.",
+      "difficultyHint": "Think: who discovered gravity, and which French king said 'I am the state'?"
+    },
+    {
+      "question": "What defined the 18th century AD (1700–1800)?",
+      "rubric": "Should mention the Enlightenment and the revolutionary era (American and/or French Revolution). Bonus for the Industrial Revolution's beginnings, key Enlightenment thinkers, or the decline of absolute monarchies.",
+      "referenceAnswer": "The 18th Century: Enlightenment & Revolution. Enlightenment thinkers (Voltaire, Rousseau, Locke, Kant) championed reason, individual rights, and democratic governance. These ideas fueled the American Revolution (1776) and the French Revolution (1789), which toppled the old order and inspired democratic movements worldwide. The Industrial Revolution began in Britain, transforming manufacturing and society. European colonial powers competed globally (Seven Years' War). The slave trade peaked, but abolitionist movements began gaining ground.",
+      "difficultyHint": "Think: two famous revolutions and the thinkers who inspired them."
+    },
+    {
+      "question": "What defined the 19th century AD (1800–1900)?",
+      "rubric": "Should mention the Industrial Revolution in full force and/or European imperialism/colonialism at its peak. Bonus for nationalism, the abolition of slavery, Darwin, or major unifications (Germany, Italy).",
+      "referenceAnswer": "The 19th Century: Industry, Empire & Nationalism. The Industrial Revolution reshaped economies and societies worldwide — urbanization, railroads, factories, and new social classes emerged. European imperial powers carved up Africa and Asia (Scramble for Africa). Nationalism drove the unification of Germany and Italy, and independence movements in Latin America. Slavery was abolished across the Western world (British Empire 1833, US 1865). Darwin published On the Origin of Species (1859). The century ended with rising tensions that would explode into World War I.",
+      "difficultyHint": "Think: factories, empires spanning the globe, and nations defining themselves."
+    },
+    {
+      "question": "What defined the 20th century AD (1900–2000)?",
+      "rubric": "Should mention the World Wars (WWI and/or WWII) and the Cold War. Bonus for decolonization, nuclear weapons, the space race, or the digital revolution's beginnings.",
+      "referenceAnswer": "The 20th Century: World Wars, Cold War & the Digital Dawn. Two devastating World Wars reshaped the global order — WWI (1914–1918) collapsed empires; WWII (1939–1945) killed ~70 million and ended with atomic bombs. The Cold War (1947–1991) divided the world into US and Soviet spheres, producing the nuclear arms race and space race. Decolonization freed Africa and Asia from European rule. The civil rights movement advanced equality. The century closed with the fall of the Berlin Wall (1989), the collapse of the USSR (1991), and the birth of the internet age.",
+      "difficultyHint": "Think: the two biggest wars in history, and the superpower standoff that followed."
+    },
+    {
+      "question": "What defined the 21st century AD (2000–present)?",
+      "rubric": "Should mention the Information Age / digital transformation and globalization. Bonus for 9/11 and the War on Terror, the 2008 financial crisis, climate change, COVID-19, or the rise of AI.",
+      "referenceAnswer": "The 21st Century: Information Age & Global Challenges. The digital revolution accelerated — smartphones, social media, and AI transformed daily life and economies. 9/11 (2001) launched the War on Terror and reshaped geopolitics. The 2008 financial crisis exposed global economic fragility. Climate change emerged as an existential threat, driving international agreements (Paris, 2015). The COVID-19 pandemic (2020) killed millions and disrupted societies worldwide. Rising authoritarianism and geopolitical competition (US-China) challenged the post-Cold War liberal order. Artificial intelligence began reshaping every industry.",
+      "difficultyHint": "Think: the internet in your pocket, a pandemic, and machines that can think."
+    }
+  ]
+}

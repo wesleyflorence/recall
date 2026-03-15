@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Deck {
+  id             Int      @id @default(autoincrement())
+  name           String
+  description    String?
+  sourceMaterial String?  @map("source_material")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  cards          Card[]
+
+  @@map("decks")
+}
+
+model Card {
+  id             Int      @id @default(autoincrement())
+  deckId         Int      @map("deck_id")
+  question       String
+  rubric         String
+  referenceAnswer String? @map("reference_answer")
+  difficultyHint String?  @map("difficulty_hint")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  deck           Deck     @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  reviews        Review[]
+  cardState      CardState?
+
+  @@map("cards")
+}
+
+model Review {
+  id           Int     @id @default(autoincrement())
+  cardId       Int     @map("card_id")
+  responseText String  @map("response_text")
+  llmGrade     Float   @map("llm_grade")
+  llmFeedback  String? @map("llm_feedback")
+  fsrsRating   Int?    @map("fsrs_rating")
+  reviewedAt   DateTime @map("reviewed_at") @default(now())
+
+  card         Card    @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  @@map("reviews")
+}
+
+model CardState {
+  id           Int      @id @default(autoincrement())
+  cardId       Int      @unique @map("card_id")
+  stability    Float
+  difficulty   Float
+  due          DateTime
+  lastReview   DateTime? @map("last_review")
+  interval     Int?
+  reps         Int      @default(0)
+  lapses       Int      @default(0)
+  state        Int      @default(0)
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  card         Card     @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  @@index([due])
+  @@map("card_state")
+}
