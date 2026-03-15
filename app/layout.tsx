@@ -5,27 +5,29 @@ import PwaBootstrap from '@/components/PwaBootstrap';
 import ThemeToggle from '@/components/ThemeToggle';
 import './globals.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata: Metadata = {
   title: 'Recall',
   description: 'Spaced repetition app for open-ended responses',
-  manifest: '/manifest.webmanifest',
+  manifest: `${basePath}/manifest.webmanifest`,
   themeColor: '#0f172a',
   icons: {
     icon: [
       {
-        url: '/icons/icon-192.png',
+        url: `${basePath}/icons/icon-192.png`,
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        url: '/icons/icon-512.png',
+        url: `${basePath}/icons/icon-512.png`,
         sizes: '512x512',
         type: 'image/png',
       },
     ],
     apple: [
       {
-        url: '/icons/apple-touch-icon-180.png',
+        url: `${basePath}/icons/apple-touch-icon-180.png`,
         sizes: '180x180',
         type: 'image/png',
       },
