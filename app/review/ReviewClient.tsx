@@ -249,7 +249,9 @@ export default function ReviewClient() {
           <h2 className="subtitle">
             <MarkdownText>{card.card.question}</MarkdownText>
           </h2>
-          <p className="muted">Rubric: {card.card.rubric}</p>
+          {card.card.difficultyHint ? (
+            <p className="muted">{card.card.difficultyHint}</p>
+          ) : null}
 
           <form className="stack" onSubmit={onSubmitResponse}>
             <label className="field">

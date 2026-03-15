@@ -152,6 +152,47 @@ launchctl load ~/Library/LaunchAgents/com.wesleyflorence.recall.plist
 
 The plist lives in `~/code/caddy/deploy/com.wesleyflorence.recall.plist` and is copied to `~/Library/LaunchAgents/` on install.
 
+## Generating Flashcard Decks
+
+You can generate decks as JSON and import them via `POST /api/decks/import` or by pasting into the web UI's import form.
+
+### JSON Format
+
+```json
+{
+  "name": "Deck Name",
+  "description": "What this deck covers",
+  "cards": [
+    {
+      "question": "The prompt shown to the user",
+      "rubric": "Grading criteria for the LLM evaluator (NEVER shown to user)",
+      "referenceAnswer": "A model answer (optional, used by LLM grader only)",
+      "difficultyHint": "A gentle nudge shown to the user (optional)"
+    }
+  ]
+}
+```
+
+### Writing Guidelines
+
+- **`rubric`** is for the LLM grader only — it is never shown to the user. Write it as evaluation instructions: "Should mention X and Y. Bonus for Z." Be specific about what counts as a good answer.
+- **`difficultyHint`** IS shown to the user before they answer. Use it as a memory jogger, not a giveaway. Good: "Think: what was the dominant empire?" Bad: "The Roman Empire was dominant."
+- **`referenceAnswer`** is shown to the user after grading as study material. Write it as a clear, informative answer they can learn from.
+- **`question`** should be open-ended enough that the user can demonstrate understanding, not just recall a single fact.
+- Keep rubrics lenient — the user should feel successful if they get the general idea right. Use "bonus for mentioning..." for specific details.
+- Each card should be self-contained — don't require remembering other cards to answer.
+
+### Importing
+
+```bash
+# From a file
+curl -X POST http://localhost:18104/recall/api/decks/import \
+  -H "Content-Type: application/json" \
+  -d @path/to/deck.json
+
+# Or paste the JSON into the import form in the web UI at /recall/decks
+```
+
 ## Things to Avoid
 
 - **Don't use npm/yarn/npx** — this project uses bun exclusively
