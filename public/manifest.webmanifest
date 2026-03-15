@@ -5,8 +5,8 @@
   "start_url": "/recall/",
   "scope": "/recall/",
   "display": "standalone",
-  "background_color": "#f2efe9",
-  "theme_color": "#0f172a",
+  "background_color": "#0C0C0F",
+  "theme_color": "#0C0C0F",
   "orientation": "portrait",
   "icons": [
     {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Recall',
   description: 'Spaced repetition app for open-ended responses',
   manifest: `${basePath}/manifest.webmanifest`,
-  themeColor: '#0f172a',
+  themeColor: '#0C0C0F',
   icons: {
     icon: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: 'Recall',
-    statusBarStyle: 'default',
+    statusBarStyle: 'black-translucent',
   },
   other: {
     'mobile-web-app-capable': 'yes',
